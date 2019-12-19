@@ -15,9 +15,9 @@ namespace BE
         private DateTime CreateDate = new DateTime();
         private DateTime OrderDate = new DateTime();
 
-        public override ToString()
+        public override String ToString()
         {
-            return;
+            return "";
         }
     }
 }
