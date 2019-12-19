@@ -9,7 +9,7 @@ namespace BE
     // Mickael Balemsi 1000/100 sinon la mort
     class CentSinonMort
     {
-        private int note90;
+        private int note150;
     }
 }
 
