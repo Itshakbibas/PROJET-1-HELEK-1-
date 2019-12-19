@@ -20,21 +20,7 @@ namespace BE
         }
 
     }
-    public class Host
-    {
-        private long HostKey { get; set; }
-        private string PrivateName { get; set; }
-        private long PhoneNumber { get; set; }
-        private string MailAddress { get; set; }
-        private string BankAccuont { get; set; }
-        private bool CollectionClearance { get; set; }
 
-        public override string ToString()
-        {
-            return;
-        }
-
-    }
 
     public class Order
     {
@@ -50,16 +36,7 @@ namespace BE
             return;
         }
     }
-    public class HostingUnit
-    {
-        private long HostingUnitKey;
-        private Host Owner;
-        private bool[,] Diary = new bool[12, 31];
-        private public override ToString()
-        {
-            return;
-        }
-    }
+
     public class GuestRequestKey
     {
         private string PrivateName;

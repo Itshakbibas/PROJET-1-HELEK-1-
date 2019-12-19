@@ -6,16 +6,22 @@ using System.Threading.Tasks;
 
 namespace BE
 {
-    class HostingUnit
+    public class HostingUnit
     {
-
-        private long HostingUnitKey;
-        private Host Owner;
-        private bool[,] Diary = new bool[12, 31];
-        private public override ToString()
+        public static long countHostingUnit = 10000000;
+        public long HostingUnitKey { get; set; }
+        public Host Owner { get; set; }
+        public bool[,] Diary = new bool[12, 31];
+        public HostingUnit()
         {
-            return;
+            HostingUnitKey = countHostingUnit++;
+
+        }
+        public override String ToString()
+        {
+            return "";
         }
     }
 }
-}
+
+// Ctrl+K + Ctrl+D

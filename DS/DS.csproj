@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E8A57588-09B1-4849-A297-2F22D90AB6E9}</ProjectGuid>
+    <ProjectGuid>{51434F9F-AC02-4E95-9D1E-085611507249}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DAL</RootNamespace>
-    <AssemblyName>DAL</AssemblyName>
+    <RootNamespace>DS</RootNamespace>
+    <AssemblyName>DS</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,19 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAL_XML.cs" />
-    <Compile Include="Factory.cs" />
-    <Compile Include="IDAL.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BE\BE.csproj">
       <Project>{bc6bd2fb-5b6a-4824-b369-d01768ab638a}</Project>
       <Name>BE</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DS\DS.csproj">
-      <Project>{51434f9f-ac02-4e95-9d1e-085611507249}</Project>
-      <Name>DS</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
