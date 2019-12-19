@@ -27,7 +27,10 @@ namespace BE
         private Options Jacuzzi;
         private Options Garden;
         private Options ChildrensAttractions;
-        public override ToString();
+        public override string ToString()
+        {
+            return " ";
+        }
 
     }
 }
