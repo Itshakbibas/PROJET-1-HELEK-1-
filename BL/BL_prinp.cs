@@ -15,6 +15,7 @@ namespace BL
         if (1>2)
                 Console.WriteLine("ta soeur");
         Console.WriteLine("ta race");
+            Console.WriteLine("dvbns,ddssjsksks");
         }
        public void updateRequest() { }
        //hostingUnit
