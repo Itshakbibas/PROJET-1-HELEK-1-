@@ -8,6 +8,7 @@ namespace BE
 {
     public class HostingUnit
     {
+        /*test git*/
         public static long countHostingUnit = 10000000;
         public long HostingUnitKey { get; set; }
         public Host Owner { get; set; }
