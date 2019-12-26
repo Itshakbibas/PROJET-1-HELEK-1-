@@ -8,7 +8,7 @@ namespace BE
 {
     public class HostingUnit
     {
-        public static long countHostingUnit = 10000001;
+        public static long countHostingUnit = 10000000;
         public long HostingUnitKey { get; set; }
         public Host Owner { get; set; }
         public bool[,] Diary = new bool[12, 31];
