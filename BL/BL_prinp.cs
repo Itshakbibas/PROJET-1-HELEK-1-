@@ -12,8 +12,6 @@ namespace BL
     public class BL_prinp:IBL
     {
        public  void addRequest()   {
-        if (1>2)
-                Console.WriteLine("ta soeur");
         
         }
        public void updateRequest() { }

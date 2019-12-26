@@ -8,16 +8,16 @@ namespace BE
 {
     public class Order
     {
-        private long HostingUnitKey;
-        private long GuestRequestKey;
-        private long OrderKey;
-        private StatusOfOrder Status;
-        private DateTime CreateDate = new DateTime();
-        private DateTime OrderDate = new DateTime();
+        public long HostingUnitKey { get; set; }
+        public long GuestRequestKey { get; set; }
+        public long OrderKey { get; set; }
+        public StatusOfOrder Status;
+        public DateTime CreateDate { get; set; }
+        public DateTime OrderDate { get; set; }
 
-        public  override string  ToString()
+        public override ToString()
         {
-            return " " ;
+            return;
         }
     }
 }

@@ -14,7 +14,8 @@ namespace BE
         public string FamilyName { get; set; }
         public long PhoneNumber { get; set; }
         public string MailAddress { get; set; }
-        public string BankAccount { get; set; }
+        BankAccount BankBranchDetails { get; set; }
+        public long BankAccountNumber { get; set; }
         public bool CollectionClearance { get; set; }
 
         public Host(string privateName, string familyName, long phoneNumber,
@@ -29,8 +30,9 @@ namespace BE
         }
         public override string ToString()
         {
-            return "";
+            return;
         }
 
     }
 }
+
