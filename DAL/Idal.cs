@@ -41,7 +41,7 @@ namespace DAL
         IEnumerable<GuestRequest> GetAllGuestRequests(Func<GuestRequest, bool> predicate = null);
         IEnumerable<HostingUnit> GetAllHostingUnit(Func<HostingUnit, bool> predicate = null);
         IEnumerable<Order> GetAllOrder(Func<Order, bool> predicate = null);
-
+        //fusion avec master 
     }
    
 }
