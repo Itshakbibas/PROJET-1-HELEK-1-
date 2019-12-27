@@ -6,31 +6,29 @@ using System.Threading.Tasks;
 
 namespace BE
 {
-    public class GuestRequestKey
+    public class GuestRequest
     {
-        private string PrivateName;
-        private string FamilyName;
-        private string MailAddress;
+        public static long GuestRequestKey = 10000001;
+        public string PrivateName { get; set; }
+        public string FamilyName { get; set; }
+        public string MailAddress { get; set; }
         //status
-        private CustomerRequirementStatus Status;
-        private DateTime RegistrationDate = new DateTime();
-        private DateTime EntryDate = new DateTime();
-        private DateTime ReleaseDate = new DateTime();
+        public CustomerRequirementStatus Status { get; set; }
+        public DateTime RegistrationDate = new DateTime();
+        public DateTime EntryDate = new DateTime();
+        public DateTime ReleaseDate = new DateTime();
         //area
-        private TypeAreaOfTheCountry Area;
+        public TypeAreaOfTheCountry Area;
         //subArea
         //type hostingUnit
-        private TypeOfHostingUnit Type;
-        private int Adults;
-        private int Children;
-        private Options Pool;
-        private Options Jacuzzi;
-        private Options Garden;
-        private Options ChildrensAttractions;
-        public override string ToString()
-        {
-            return " ";
-        }
+        public TypeOfHostingUnit Type { get; set; }
+        public int Adults;
+        public int Children;
+        public Options Pool;
+        public Options Jacuzzi;
+        public Options Garden;
+        public Options ChildrensAttractions;
+        public override ToString();
 
     }
 }

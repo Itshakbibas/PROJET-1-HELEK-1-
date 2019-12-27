@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace BE
 {
-    enum CustomerRequirementStatus
+    public enum CustomerRequirementStatus
     {
         active,
         transactionClosed,
         hasExpired
     }
-    enum StatusOfOrder
+    public enum StatusOfOrder
     {
         NotYetAddressed,
         anemailwassent,
@@ -21,7 +21,7 @@ namespace BE
         ClosesCustomersResponse
     }
 
-    enum TypeOfHostingUnit
+    public enum TypeOfHostingUnit
     {
         zimmer,
         apartment,
@@ -29,7 +29,7 @@ namespace BE
         tent
     }
 
-    enum TypeAreaOfTheCountry
+    public enum TypeAreaOfTheCountry
     {
         all,
         north,
@@ -37,8 +37,8 @@ namespace BE
         center,
         jerusalem
     }
-    
-    enum Options
+
+    public enum Options
     {
         yes,
         no,

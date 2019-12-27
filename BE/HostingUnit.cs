@@ -8,6 +8,7 @@ namespace BE
 {
     public class HostingUnit
     {
+        /*test git*/
         public static long countHostingUnit = 10000000;
         public long HostingUnitKey { get; set; }
         public Host Owner { get; set; }
@@ -17,11 +18,10 @@ namespace BE
             HostingUnitKey = countHostingUnit++;
 
         }
-        public override String ToString()
+        public override ToString()
         {
-            return "";
+            return;
         }
+
     }
 }
-
-// Ctrl+K + Ctrl+D
