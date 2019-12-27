@@ -11,8 +11,8 @@ namespace BL
 {
     public class BL_prinp:IBL
     {
-       public  void addRequest()   {
-        
+       public  void addRequest(GuestRequest g)   {
+            
         }
        public void updateRequest() { }
        //hostingUnit

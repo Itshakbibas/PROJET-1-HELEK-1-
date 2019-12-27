@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BE;
+using DAL;
 
 namespace BL
 {
     public interface IBL
     {
         //request
-        void addRequest();
+        void addRequest(GuestRequest g);
         void updateRequest();
 
         //hostingUnit
@@ -26,5 +28,10 @@ namespace BL
         void printAllOrder();
         void printAllCustomer();
         void printAllBranchesOfBank();
+        
+        IEnumerable <GuestRequest> GetAllGuestRequests(Func <GuestRequest,bool>predicate=null);
+        IEnumerable <HostingUnit> GetAllHostingUnit(Func <HostingUnit,bool>predicate=null);
+        IEnumerable <Order> GetAllOrder(Func <Order,bool>predicate=null);
+
     }
 }
